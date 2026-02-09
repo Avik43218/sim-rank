@@ -1,3 +1,5 @@
-# ParallelMinds
+# fast-recruit
 
-In this project we have basically created a model where the HR of a company can shortlist few top candidates from the total applicants that apply. This model will help them as many times genuine candidates don't make it. so, to overcome this situation we have developed this model. We have developed this model using CUDA C++ to run the whole process on gpu becaue GPU will help in parallelisation which makes the process super fast. This model will process 1000+ applications in few seconds which would easily take several minutes if it runs on cpu. 
+This project deals with an important task essential during selection of interview candidates by the HR of the company, that is, sorting out candidates based on their resumes and their skills.
+
+The system leverages the CUDA cores present in NVIDIA GPUs to sort out the resumes that align the most with the target set by the HR. This results in a massive leap in performance over the traditional CPU-based systems.
