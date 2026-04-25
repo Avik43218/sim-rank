@@ -1,4 +1,4 @@
-# fast-recruit
+# SimRank: Similarity Ranking for Resume Sorting
 
 This project deals with an important task essential during selection of interview candidates by the HR of the company, that is, sorting out candidates based on their resumes and their skills.
 
