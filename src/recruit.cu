@@ -131,7 +131,11 @@ DataCorpus preprocess_corpus(const string &folder_path) {
         hashes.reserve(tokens.size());
         for (auto &t : tokens) {
             uint64_t seed = 0;
-            for (char c : t) seed += (uint8_t)c;
+            unit8_t index = 0;
+            for (char c : t) {
+                seed = (uint8_t)(seed + ((uint8_t)c * index));
+                index++;
+            }
             hashes.push_back(splitmix32(seed));
         }
 
